@@ -17,7 +17,7 @@ public class Assess_Automation {
 		WebElement drag=wd.findElement(By.xpath("//*[@id=\"draggableElement\"]"));
 		WebElement drop=wd.findElement(By.xpath("//*[@id=\"droppableElement\"]"));
 		Actions act=new Actions(wd);
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		act.dragAndDrop(drag, drop).build().perform();
 		Thread.sleep(2000);
 		
@@ -34,3 +34,4 @@ public class Assess_Automation {
 	}
 
 }
+
